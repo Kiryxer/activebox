@@ -7,9 +7,17 @@
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #6c7279;
   background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+p{
+  margin: 0 0 10px;
 }
 
 /* Container */
@@ -25,6 +33,7 @@ body{
 
 .header{
   width: 100%;
+  height: 100px;
   position: absolute;
   top: 0;
   left:0;
@@ -67,10 +76,107 @@ body{
 /* Intro */
 
 .intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 750px;
+  padding-top: 100px;
 
   background:#2d314b url("../images/header-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.into__inner{
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title{
+  margin: 0 0 20px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.intro__text{
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+
+  margin-bottom: 75px;
+}
+
+/* Button */
+
+.btn{
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.6;
+  color: #fff;
+
+  padding: 15px 55px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  transition: background .1s  linear;
+}
+
+.btn--red{
+  background-color: #e84545;
+
+}
+
+.btn--red:hover{
+  background-color: #c73a3a;
+}
+
+/* Features */
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0px;
+}
+
+.features__item{
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 40px;
+  margin: 25px 0px;
+}
+
+.features__icon{
+  margin-bottom: 25px;
+}
+
+.features__title{
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d3033;
+}
+
+.features__text{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
 }
